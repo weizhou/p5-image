@@ -1,0 +1,19 @@
+{
+  "name": "glimg",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./dist/glimg.bundle.js",
+  "scripts": {
+    "develop": "webpack --mode development",
+    "build": "webpack --mode production"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "url-loader": "^4.1.1",
+    "webpack": "^4.44.2",
+    "webpack-cli": "^3.3.12",
+    "webpack-shell-plugin": "^0.5.0"
+  }
+}

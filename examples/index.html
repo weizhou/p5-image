@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <title>p5image example</title>
+
+    <link rel="stylesheet" href="./style.css">
+    <script src="./lib/p5.min.js" defer></script>
+    <script src="./lib/p5image.bundle.js" defer></script>
+  </head>
+  <body>
+    <div class="heading"><span>p5-image examples</span></div>
+    <div class="example-container">
+
+      <p5-img height="300" src="./images/lenna.png" filters='{"EmbossFilter": {}}'></p5-img>
+
+      <!-- <p5-img src="./lenna.png" height="200" 
+              filters='{"ChromakeyingFilter": {"thresholdSensitivity": 0.1, "smoothing": 0.01, "colorToReplace": [0.1, 0.1, 0.0]}
+                      }'>
+      </p5-img> -->
+      <!-- <p5-img src="./lenna.png" height="200" 
+              filters='{"HighlightShadowTintFilter": {"shadowTintIntensity": 3, 
+              "highlightTintIntensity": 3,
+              "shadowTintColor": [1,0,0],
+              "highlightTintColor": [0,1,0]}
+                      }'> -->
+
+      <!-- <p5-img src="./lenna.png" height="200" 
+      filters='{"LevelsFilter": {"levelMinimum":[0.1, 0.1, 0.1],
+      "levelMaximum": [0.9, 0.9, 0.9],
+      "levelMiddle": [0.3, 0.3, 0.3],
+      "minOutput": [0.3, 0.3, 0.3],
+      "maxOutput": [0.8, 0.8, 0.8]}
+              }'>    
+           -->
+      <!-- <p5-img src="./lenna.png" height="200" 
+      filters='{
+        "VibranceFilter": {"vibrance": 0.3},
+                "HazeFilter": {"hazeDistance": -10, "slope": 0.3}
+              }'>     -->
+              
+              <!-- <p5-img src="./lenna.png" height="200" 
+      filters='{                "GrayscaleFilter": {},
+                "VibranceFilter": {"vibrance": 0.3},
+                "HazeFilter": {"hazeDistance": -0.5, "slope": 0.3}
+
+              }'>
+
+              <p5-img src="./lenna.png" height="200" 
+              filters='{"BlockBlurFilter": {"radius": 10, "repeat": 3}
+                      }'> 
+
+              }'> 
+              
+      </p5-img> -->
+      <!-- <p5-img src="./amatorka.jpg" height="200"
+              filters='{"GaussianBlurFilter": {"radius": 10, "sigma": 10, "repeat": 2}
+                      }'>
+      </p5-img> --> 
+
+      <!-- <p5-img src="./amatorka.jpg" height="200"
+      filters='{"CannyEdgeFilter": {}
+              }'>
+</p5-img> -->
+      <!--
+      <p5-img src="./arrow.png" height="100"></p5-img> -->
+      <!-- <p5-img src="./lenna.png"  height="400"></p5-img>
+      <p5-img src="./lenna.png" height="400"
+      filters='{"XYDerivativeFilter": {"edgeStrength": 2.0}}'>
+
+      <p5-img src="./arrow.png" height="400"
+      filters='{"HarrisCornerDetectionFilter": {"blurRadius": 1, "blurSigma": 2, "sensitivity": 0.5}}'>
+
+      <p5-img src="./arrow.png" height="400"
+      filters='{"NobleCornerDetectionFilter": {"blurRadius": 1, "blurSigma": 2, "sensitivity": 0.5}}'>
+
+      <p5-img src="./arrow.png" height="400"
+      filters='{"ShiTomasiFeatureDetectionFilter": {"blurRadius": 1, "blurSigma": 2, "sensitivity": 0.5}}'> -->
+
+      
+      <!-- <p5-img src="./amatorka.jpg" height="400"
+      filters='{"CropFilter": {"x": 50.0, "y": 50.0, "width": 800.0, "height": 800.0}
+              }'> 
+      </p5-img> -->
+
+      <p5-img-blend height="300" src1="./images/lenna.png" src2="./images/amatorka.jpg" mode="ChromaKeyBlender" param='{"colorToReplace": [0.8, 0.2, 0.1], "thresholdSensitivity": 0.15, "smoothing": 0.0}'></p5-img-blend>
+      <p5-img-blend height="300" src1="./images/lenna.png" src2="./images/amatorka.jpg" mode="LinearBurnBlender"></p5-img-blend>
+    </div>
+  </body>
+</html>
