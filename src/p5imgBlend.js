@@ -71,3 +71,14 @@ export class P5ImgBlend {
         this._p5 = new p5(sketch);
     }
 }
+
+export function p5ImageBlend(setting) {
+    let targetElement = document.getElementById(setting.target);
+    targetElement.src1 = setting.src1;
+    targetElement.src2 = setting.src2;
+    targetElement.mode = setting.mode;
+    targetElement.param = JSON.stringify(setting.param);
+    targetElement.width = setting.width;
+    targetElement.height = setting.height;
+    new P5ImgBlend(targetElement);
+}

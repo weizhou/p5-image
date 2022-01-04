@@ -113,5 +113,5 @@ export { P5SaturationBlender } from "./p5Blenders/P5SaturationBlender";
 export { P5LuminosityBlender } from "./p5Blenders/P5LuminosityBlender";
 export { P5LinearBurnBlender } from "./p5Blenders/P5LinearBurnBlender";
 
-export { P5ImgBlend } from "./p5imgBlend";
+export { P5ImgBlend, p5ImageBlend } from "./p5imgBlend";
 export { P5ImgBlendElement } from "./p5imgBlendElement";
