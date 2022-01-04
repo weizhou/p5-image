@@ -85,7 +85,7 @@ export { P5CGAColorSpaceFilter } from "./p5Filters/visualEffect/p5CGAColorSpaceF
 export { P5SolarizeFilter } from "./p5Filters/visualEffect/p5SolarizeFilter";
 
 
-export { P5Img } from "./p5img";
+export { P5Img, p5Image } from "./p5img";
 export { P5ImgElement } from "./p5imgElement";
 
 export { P5Blender } from "./p5Blenders/P5Blender";

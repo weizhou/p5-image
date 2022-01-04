@@ -6,14 +6,16 @@
     <title>p5image example</title>
 
     <link rel="stylesheet" href="./style.css">
-    <script src="./lib/p5.min.js" defer></script>
-    <script src="./lib/p5image.bundle.js" defer></script>
+    <script src="./lib/p5.min.js"></script>
+    <script src="./lib/p5image.bundle.js"></script>
   </head>
   <body>
     <div class="heading"><span>p5-image examples</span></div>
     <div class="example-container">
 
+
       <p5-img height="300" src="./images/lenna.png" filters='{"EmbossFilter": {}}'></p5-img>
+      <div id="p5image1"></div>
 
       <!-- <p5-img src="./lenna.png" height="200" 
               filters='{"ChromakeyingFilter": {"thresholdSensitivity": 0.1, "smoothing": 0.01, "colorToReplace": [0.1, 0.1, 0.0]}
@@ -86,6 +88,8 @@
 
       <p5-img-blend height="300" src1="./images/lenna.png" src2="./images/amatorka.jpg" mode="ChromaKeyBlender" param='{"colorToReplace": [0.8, 0.2, 0.1], "thresholdSensitivity": 0.15, "smoothing": 0.0}'></p5-img-blend>
       <p5-img-blend height="300" src1="./images/lenna.png" src2="./images/amatorka.jpg" mode="LinearBurnBlender"></p5-img-blend>
+      <script src="main.js"></script>
     </div>
+
   </body>
 </html>

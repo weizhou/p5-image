@@ -92,3 +92,13 @@ export class P5Img {
         this._p5 = new p5(sketch);
     }
 }
+
+export function p5Image(setting) {
+    let targetElement = document.getElementById(setting.target);
+    targetElement.src = setting.src;
+    targetElement.filters = setting.filters;
+    targetElement.width = setting.width;
+    targetElement.height = setting.height;
+    new P5Img(targetElement);
+}
+
