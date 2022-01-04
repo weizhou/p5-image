@@ -228,41 +228,40 @@ The framework also supports blend mode which takes two images as inputs and blen
 - LinearBurnBlender: Applies a linear burn blend of two images
 
 
-## Code example
-You can use javacript to add the glimg to the webpage dynamically, or leverage an easy to use html custom element tag to include a glimg directly in the page. 
+## How to code
+
+You can use p5-image as a html tag or a javacript function to add the processed image to your webpage. 
 
 Firstly, incluse the glimg js bundle in you html:
 ```
   <head>
-    <script src="./p5-image.bundle.js" defer></script>
+    <script src="./p5image.bundle.js" defer></script>
   </head>
 
 ```
-Then you can use it in javascript file or html pages.
+
+To add image using html tag:
+
+```
+<p5-img src="<path>/<to>/<orignal>/<image>" height="300"
+filters='{"<Filter Name>": <Filter Params>}'> 
+</p5-img>
+```
+
+To add image dynamically using javascript:
 
 Javascript:
 ```
-const glimg = new GLImage();
-glimg.addFilter(new GLImgGrayscaleFilter());
-glimg.addFilter(new GLImgSobelEdgeFilter());
-glimg.onload = ()=> {
-  document.createElement('div').appendChild(glimg.getCanvas());
-};
-glimg.url = imageUrl;
+p5Image({
+    "target": "<target element id>",   
+    "height": 300,
+    "src": "<path>/<to>/<original>/<image>",
+    "filters": '{<Filter Name>: Filter Params}'
+});
 ```
-
-gl-img tag:
-```
-      <p5-img filters='[
-        {"name": "GrayscaleFilter"},
-        {"name": "BlockblurFilter", "radius": 10.0}
-        ]' src="./lenna.png">
-      </p5-img>
-```
-
 
 ## Demo
-A [demo page](https://weizhou.github.io/glimg/examples/) has been setup to show how to use the libary.
+A [demo page](https://glimglab.com/document) has been setup to show how to use the libary.
 
 ## GLSL tips
 - no implicit type conversion, use explicit type conversion functions, such as float(), int() etc.
