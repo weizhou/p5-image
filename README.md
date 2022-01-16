@@ -232,10 +232,10 @@ The framework also supports blend mode which takes two images as inputs and blen
 
 You can use p5-image as a html tag or a javacript function to add the processed image to your webpage. 
 
-Firstly, incluse the glimg js bundle in you html:
+Firstly, incluse the p5image lib js in you html:
 ```
   <head>
-    <script src="./p5image.bundle.js" defer></script>
+    <script src="./p5image.min.js" defer></script>
   </head>
 
 ```
@@ -261,7 +261,7 @@ p5Image({
 ```
 
 ## Demo
-A [demo page](https://glimglab.com/document) has been setup to show how to use the libary.
+A [demo page](https://p5image.com/) has been setup to show how to use the libary.
 
 ## GLSL tips
 - no implicit type conversion, use explicit type conversion functions, such as float(), int() etc.
